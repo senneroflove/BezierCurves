@@ -92,6 +92,7 @@ public class DrowBezierCurves : MonoBehaviour
             lineRenderers[i].SetPosition(1, linePoints[i].endPoint);
             lineRenderers[i].startWidth = 0.01f;
             lineRenderers[i].endWidth = 0.01f;
+            lineRenderers[i].GetComponent<Renderer>().material.color = Color.HSVToRGB(  i /100f, 1f, 1f);
         }
     }
     
